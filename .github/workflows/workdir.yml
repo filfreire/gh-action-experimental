@@ -10,4 +10,4 @@ jobs:
     steps:
       - name: Print current working directory
         run: |
-          echo Current directory is %cd%
+          echo Current directory is test1 %GITHUB_WORKSPACE% test2 $env:GITHUB_WORKSPACE
