@@ -1,0 +1,13 @@
+name: Print Current Directory
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  print-directory:
+    runs-on: windows-latest
+    steps:
+      - name: Print current working directory
+        run: |
+          echo Current directory is %cd%
